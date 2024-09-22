@@ -1,0 +1,7 @@
+https://github.com/dotnet/AspNetCore.Docs/tree/e43694e1cdd2c29decd0d45cca5ff78d6b0e2506/aspnetcore/fundamentals/logging/index/samples/3.x/TodoApiSample
+
+https://www.tumblr.com/blog/micgi
+
+
+
+

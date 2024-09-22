@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Memes.Core.Interfaces\Memes.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\Memes.Core.Logging\Memes.Core.Logging.csproj" />
+    <ProjectReference Include="..\Memes.Core.Serialization\Memes.Core.Serialization.csproj" />
+    <ProjectReference Include="..\Memes.Entities\Memes.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

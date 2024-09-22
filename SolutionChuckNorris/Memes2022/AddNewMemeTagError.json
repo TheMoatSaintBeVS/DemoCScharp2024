@@ -1,0 +1,13 @@
+{
+  "id": 0,
+  "bottomText": "string",
+  "topText": "string",
+  "userId": 1,
+  "uriImage": "https://64.media.tumblr.com/8e836561eb88413b8c3cf7051abedf3c/tumblr_pnmkn9KWzp1qgszpno1_400.jpg",
+  "tagIds": [
+    100,
+    200,
+    3000,
+    400
+  ]
+}

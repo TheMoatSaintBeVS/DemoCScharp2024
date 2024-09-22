@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Memes.Core.Interfaces\Memes.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\Memes.Core.Logging\Memes.Core.Logging.csproj" />
+    <ProjectReference Include="..\Memes.Entities\Memes.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

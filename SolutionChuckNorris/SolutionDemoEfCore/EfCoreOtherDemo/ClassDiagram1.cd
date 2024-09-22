@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EfCoreOtherDemo.Athete">
+    <Position X="9" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQCCAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Athete.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Team" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Results" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EfCoreOtherDemo.Result">
+    <Position X="3.75" Y="3.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAABAACAAAAEAAAAAAAAAEAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Result.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Athlete" />
+      <Property Name="WorldChampionShip" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EfCoreOtherDemo.Team">
+    <Position X="7.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Team.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Athetes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EfCoreOtherDemo.WorldChampionShip">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABAAAAAAIAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WorldChampionShip.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Results" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="EfCoreOtherDemo.Db2021WorldChampionShipContext">
+    <Position X="4.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAQAQAAAAAAAAAEAAGAAAAAEAAAgAAAAAAAA=</HashCode>
+      <FileName>Db2021WorldChampionShipContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="dc5029fa-b063-4d0d-9d5c-b94e005a8267" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="82dd1e96-1346-410e-8a55-d6e1902b0e25" name="Business">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="0e358051-2450-4bc5-8f5a-2858b4241c5b" direction="Forward">
+          <layerMoniker Id="f1543739-788d-4cc0-86de-f41d4af729a2" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="55508fe1-c362-4dd5-9919-8c182cfbd739" direction="Forward">
+          <layerMoniker Id="fc4a43ca-e634-41e0-9c4c-8962e255eadc" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="d76e01b6-5557-4de9-aef4-5e4408d4dcac" name="TDD.Services">
+          <references>
+            <reference Id="0f978043-26d4-4c06-900c-a31064159ed4" name="TDD.Services">
+              <ArtifactNode Label="TDD.Services" Category="CodeSchema_Project" Id="(Assembly=../TDD.Services/TDD.Services.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TDD.Services)" Label="TDD.Services.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="fc4a43ca-e634-41e0-9c4c-8962e255eadc" name="Data">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="45f5adfb-cf31-4ceb-80d8-1e2f0082dfb9" direction="Forward">
+          <layerMoniker Id="f1543739-788d-4cc0-86de-f41d4af729a2" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="2fc58bf4-7c9a-48a4-8320-4814e5abee10" name="Repository.cs">
+          <references>
+            <reference Id="d9a81cd3-ba01-4033-b5af-913375e29406" name="Repository.cs">
+              <ArtifactNode Label="Repository.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=../TDD.StaticRepos/TDD.StaticRepos.csproj File=../TDD.StaticRepos/Repository.cs)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TDD.StaticRepos Namespace=TDD.StaticRepos Type=Repository)" Label="Repository" Category="CodeSchema_Class">
+                <LinkCategory Ref="Contains" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="67306a10-a49c-429a-8a0e-71864fbe2854" name="TDD.Interfaces">
+          <references>
+            <reference Id="d6094233-e043-403e-bba4-86c7a0b1876e" name="TDD.Interfaces">
+              <ArtifactNode Label="TDD.Interfaces" Category="CodeSchema_Project" Id="(Assembly=../TDD.Interfaces/TDD.Interfaces.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TDD.Interfaces)" Label="TDD.Interfaces.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="f1543739-788d-4cc0-86de-f41d4af729a2" name="Models">
+      <childLayers>
+        <layer Id="fabd8358-69e7-4538-9701-fc2036314055" name="TDD.Entities">
+          <references>
+            <reference Id="6ea81b32-d80f-47e3-ace6-6c99f64780fb" name="TDD.Entities">
+              <ArtifactNode Label="TDD.Entities" Category="CodeSchema_Project" Id="(Assembly=../TDD.Entities/TDD.Entities.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TDD.Entities)" Label="TDD.Entities.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

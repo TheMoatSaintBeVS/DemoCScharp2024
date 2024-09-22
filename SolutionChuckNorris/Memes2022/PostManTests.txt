@@ -1,0 +1,59 @@
+
+
+
+
+// GetAllTags
+pm.test("Status test", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("response must be valid and have a body", function () {
+     pm.response.to.be.ok;
+     pm.response.to.be.withBody;
+     pm.response.to.be.json;
+});
+
+const jsonData = pm.response.json();
+
+pm.test("Test data type of the response", () => {
+  pm.expect(jsonData).to.be.an("array");
+});
+
+console.log(jsonData.length);
+
+pm.test("Test the number of tags", () => {
+  pm.expect(jsonData.length).to.equal(9);
+});
+
+
+// GetTag(Id)
+
+pm.test("Status test", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("response must be valid and have a body", function () {
+     pm.response.to.be.ok;
+     pm.response.to.be.withBody;
+     pm.response.to.be.json;
+});
+
+const jsonData = pm.response.json();
+pm.test("Test data type of the response", () => {
+  pm.expect(jsonData).to.be.an("object");
+  pm.expect(jsonData.description).to.be.a("string");
+  pm.expect(jsonData.id).to.be.a("number");
+  pm.expect(jsonData.memeTags).to.be.an("array");
+});
+
+pm.test("id must be 100", function () {
+ pm.expect(jsonData.id).to.eql(100);
+}
+)
+
+pm.test("description must be Csharp", function () {
+ pm.expect(jsonData.description).to.eql("Csharp");
+}
+)
+
+

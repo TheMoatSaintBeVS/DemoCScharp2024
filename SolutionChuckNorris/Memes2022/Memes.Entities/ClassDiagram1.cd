@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Memes.Entities.Meme">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAALAAAACAAAAAAQAAAAAAiAAAAAABEAAAAAAAAAQAA=</HashCode>
+      <FileName>Meme.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+      <Property Name="Image" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="MemeTags" />
+      <Property Name="UpVotes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Memes.Entities.User">
+    <Position X="8.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAQAAAAgAAAAAAAAACAAAAAAAAAAAAQAAAAAAg=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Memes" />
+      <Property Name="UpVotes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Memes.Entities.Image">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Image.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Memes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Memes.Entities.UpVote">
+    <Position X="2" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAEAAAAAAAAAAAAAAgAAAQAAAgBAAAAAAAAAAA=</HashCode>
+      <FileName>UpVote.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+      <Property Name="Meme" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Memes.Entities.Tag">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tag.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MemeTags" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Memes.Entities.MemeTag">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAQAAAgAAAAAAAAAAAE=</HashCode>
+      <FileName>MemeTag.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Meme" />
+      <Property Name="Tag" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
